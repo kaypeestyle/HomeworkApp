@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kids Homework App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Homework App</h1>
+        
+        <!-- Teacher Section -->
+        <div id="teacher-view">
+            <h2>Add New Homework</h2>
+            <textarea id="hw-description" placeholder="Homework description"></textarea>
+            <button onclick="addHomework()">Add Homework</button>
+            
+            <h2>Submitted Work</h2>
+            <div id="submitted-work"></div>
+        </div>
+        
+        <!-- Student Section -->
+        <div id="student-view">
+            <h2>Your Homework</h2>
+            <div id="homework-list"></div>
+            
+            <h2>Submit Your Work</h2>
+            <input type="file" id="hw-upload">
+            <button onclick="submitWork()">Submit</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
